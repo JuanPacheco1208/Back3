@@ -8,20 +8,13 @@
   {
     "id": 2,
     "tittle": "Celular",
-    "description": "Haz tus cálculos",
-    "price": 120,
-    "thumbnail": "https://calculadora.jpg",
-    "code": "6305",
-    "stock": 10
-},
-{
+    "description": "prueba",
+    "price": "120"
+  },
+  {
     "id": 3,
     "tittle": "Papel",
-    "description": "Haz tus cálculos",
-    "price": 5,
-    "thumbnail": "https://calculadora.jpg",
-    "code": "6306",
-    "stock": 25
-}
+    "description": "prueba",
+    "price": "5"
+  }
 ]
-

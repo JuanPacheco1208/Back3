@@ -14,6 +14,34 @@ class ProductManager{
         products.push({id, tittle, description,price, thumbnail, code, stock})
         fs.writeFileSync(this.filename, JSON.stringify(products, null, 2))
     }
+    getProducts = async(tittle, description, price, thumbnail, code, stock) => {
+        let id
+        if(products.length === 0) id = 0
+        else id = products[products.length-1].id + 1
+        products.push({id, tittle, description,price, thumbnail, code, stock})
+        fs.writeFileSync(this.filename, JSON.stringify(products, null, 2))
+    }
+    getProductById = async(tittle, description, price, thumbnail, code, stock) => {
+        let id
+        if(products.length === 0) id = 1
+        else id = products[products.length-1].id + 1
+        products.push({id, tittle, description,price, thumbnail, code, stock})
+        fs.writeFileSync(this.filename, JSON.stringify(products, null, 2))
+    }
+    updateProduct = async(tittle, description, price, thumbnail, code, stock) => {
+        let id
+        if(products.length === 0) id = 1
+        else id = products[products.length-1].id + 1
+        products.push({id, tittle, description,price, thumbnail, code, stock})
+        fs.writeFileSync(this.filename, JSON.stringify(products, null, 2))
+    }
+    deleteProduct = async(tittle, description, price, thumbnail, code, stock) => {
+        let id
+        if(products.length === 0) id = 1
+        else id = products[products.length-1].id + 1
+        products.push({id, tittle, description,price, thumbnail, code, stock})
+        fs.writeFileSync(this.filename, JSON.stringify(products, null, 2))
+    }
 }
 
 async function desafio() {
